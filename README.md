@@ -1,3 +1,5 @@
 # Minimap
-Google’s Immersive Geospatial Challenge Team Repo
-Unity ver 2021.3.31f1
+This repo is for our team's work on the 2023 Google’s Immersive Geospatial Challenge
+
+Unity ver 2024.1.16f1
+Target Platform Android

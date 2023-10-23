@@ -99,11 +99,29 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.performance.profile-analyzer": {
       "version": "1.2.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.probuilder": {
+      "version": "5.1.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.settings-manager": "1.0.3",
+        "com.unity.modules.physics": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
@@ -274,6 +292,25 @@
         "com.unity.xr.legacyinputhelpers": "2.1.7"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.virgis.geojson.net": {
+      "version": "https://github.com/ViRGIS-Team/GeoJSON.Net.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "2.0.0"
+      },
+      "hash": "f3545faf0e1aae5bb9c9c68b60947e4d03a1b34b"
+    },
+    "nl.elmarjansen.geojsoncitybuilder": {
+      "version": "https://github.com/ElmarJ/GeoJsonCityBuilder.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.probuilder": "4.5.2",
+        "com.virgis.geojson.net": "1.2.17"
+      },
+      "hash": "eeb2f000a9247e782a76bdcede56c6722da66899"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

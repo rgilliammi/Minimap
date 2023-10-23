@@ -732,6 +732,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &193803531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193803532}
+  - component: {fileID: 193803533}
+  m_Layer: 0
+  m_Name: Cesium3DTileset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193803532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193803531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5.694583, z: 0}
+  m_LocalScale: {x: 1, y: 0.3447919, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 641230867}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &193803533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193803531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844ac86b07dcfa3468f56da55d787510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showCreditsOnScreen: 0
+  _tilesetSource: 1
+  _url: 
+  _ionAssetID: 0
+  _ionAccessToken: 
+  _maximumScreenSpaceError: 16
+  _preloadAncestors: 1
+  _preloadSiblings: 1
+  _forbidHoles: 0
+  _maximumSimultaneousTileLoads: 20
+  _maximumCachedBytes: 536870912
+  _loadingDescendantLimit: 20
+  _enableFrustumCulling: 1
+  _enableFogCulling: 1
+  _enforceCulledScreenSpaceError: 1
+  _culledScreenSpaceError: 64
+  _opaqueMaterial: {fileID: 0}
+  _generateSmoothNormals: 0
+  _pointCloudShading:
+    _attenuation: 0
+    _geometricErrorScale: 1
+    _maximumAttenuation: 0
+    _baseResolution: 0
+  _suspendUpdate: 0
+  _showTilesInHierarchy: 0
+  _updateInEditor: 1
+  _logSelectionStats: 0
+  _createPhysicsMeshes: 1
 --- !u!1 &195393090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,8 +1518,6 @@ GameObject:
   - component: {fileID: 641230867}
   - component: {fileID: 641230866}
   - component: {fileID: 641230865}
-  - component: {fileID: 641230869}
-  - component: {fileID: 641230868}
   m_Layer: 0
   m_Name: AR Geospatial Creator Origin
   m_TagString: EditorOnly
@@ -1468,12 +1538,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _originAuthority: 0
-  _latitude: 42.335368
-  _longitude: -71.581934
-  _height: 0
-  _ecefX: 1491904.919272617
-  _ecefY: -4480114.707095401
-  _ecefZ: 4273214.000183585
+  _latitude: 42.366070182000044
+  _longitude: -71.1177103919999
+  _height: 4
+  _ecefX: 1527411.911435794
+  _ecefY: -4465708.990790552
+  _ecefZ: 4275737.101762216
   _scale: 1
 --- !u!114 &641230866
 MonoBehaviour:
@@ -1495,44 +1565,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641230864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -16.516, z: 0}
+  m_LocalScale: {x: 1, y: 2.9003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1293087114}
   - {fileID: 2112288112}
+  - {fileID: 193803532}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &641230868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641230864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b3d0e3f52dfe4243aceaba16f9cd0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AltType: 0
-  _latitude: 0
-  _longitude: 0
-  _altitude: 0
-  _altitudeOffset: 0
---- !u!114 &641230869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 641230864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be18a7392bf44ce7a5ceab9e8a6f240, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &683091019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,6 +3106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1293087114}
   - component: {fileID: 1293087115}
+  - component: {fileID: 1293087116}
   m_Layer: 0
   m_Name: Cesium3DTileset
   m_TagString: EditorOnly
@@ -3099,15 +3142,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showCreditsOnScreen: 1
-  _tilesetSource: 1
+  _tilesetSource: 0
   _url: https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyDjgl07UuFZfmtSCu12zJRkeOc8iEyV6-E
-  _ionAssetID: 0
+  _ionAssetID: 2324176
   _ionAccessToken: 
   _maximumScreenSpaceError: 16
   _preloadAncestors: 1
   _preloadSiblings: 1
   _forbidHoles: 0
-  _maximumSimultaneousTileLoads: 20
+  _maximumSimultaneousTileLoads: 321
   _maximumCachedBytes: 536870912
   _loadingDescendantLimit: 20
   _enableFrustumCulling: 1
@@ -3122,10 +3165,22 @@ MonoBehaviour:
     _maximumAttenuation: 0
     _baseResolution: 0
   _suspendUpdate: 0
-  _showTilesInHierarchy: 0
+  _showTilesInHierarchy: 1
   _updateInEditor: 1
   _logSelectionStats: 0
   _createPhysicsMeshes: 0
+--- !u!114 &1293087116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293087113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1942b8938da484cab4fe52e17a3cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1294503042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5221,6 +5276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2112288112}
   - component: {fileID: 2112288113}
+  - component: {fileID: 2112288114}
   m_Layer: 0
   m_Name: Cesium3DTileset
   m_TagString: EditorOnly
@@ -5257,8 +5313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showCreditsOnScreen: 1
   _tilesetSource: 1
-  _url: 
-  _ionAssetID: 0
+  _url: https://tile.googleapis.com/v1/3dtiles/root.json?key=AIzaSyDjgl07UuFZfmtSCu12zJRkeOc8iEyV6-E
+  _ionAssetID: 96188
   _ionAccessToken: 
   _maximumScreenSpaceError: 16
   _preloadAncestors: 1
@@ -5283,3 +5339,15 @@ MonoBehaviour:
   _updateInEditor: 1
   _logSelectionStats: 0
   _createPhysicsMeshes: 0
+--- !u!114 &2112288114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112288111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1942b8938da484cab4fe52e17a3cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

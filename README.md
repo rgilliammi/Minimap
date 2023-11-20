@@ -1,15 +1,15 @@
 # Minimap
 This repo is for our team's work on the 2023 Google’s Immersive Geospatial Challenge
 
-Unity ver 2023.1.16f1
+Unity ver 2021.3.31f1
 Target Platform Android
 
-#Note
+# Note
 Maps API Key has been removed and deactivated, you will need to use your own to get the project working.
 
 Includes datasets from: https://data.boston.gov/
 
-#MIT License
+# MIT License
 
 Copyright (c) [year] [fullname]
 
